@@ -1,4 +1,4 @@
-import { Fake, EFakeVideoType } from "../src";
+import Fake, { EFakeVideoType } from "../src";
 
 describe("FakeDataUtils", () => {
   it("should be defined", () => {

@@ -21,7 +21,7 @@ export interface IFakeImage {
  * @name Fake
  * @description Generate fake data to simulate content
  */
-export class Fake {
+export default class Fake {
   // --------------------------------------------------------------------------- DATAS
 
   // image API

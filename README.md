@@ -16,10 +16,10 @@ $ npm install -s @wbe/fake
 
 ## How to use
 
-Import `fakeDataUtils`:
+Import `Fake`:
 
 ```tsx
-import { fakeDataUtils } from "@wbe/fake";
+import Fake from "@wbe/fake";
 ```
 
 ## API
