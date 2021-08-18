@@ -24,18 +24,18 @@ import { fakeDataUtils } from "@wbe/fake";
 
 ## API
 
-- [getResponsiveImageData](#getResponsiveImageData)
-- [getVideoUrl](#getVideoUrl)
-- [getVideoId](#getVideoId)
-- [getTitle](#getTitle)
-- [getText](#getText)
+- [responsiveImageData](#responsiveImageData)
+- [videoUrl](#videoUrl)
+- [videoId](#videoId)
+- [title](#title)
+- [text](#text)
 
-### <a name="getResponsiveImageData"></a>getResponsiveImageData
+### <a name="responsiveImageData"></a>responsiveImageData
 
 Get an array of random IFakeImage objects.
 
 ```tsx
-getResponsiveImageData(pRatio, pBreakpoints);
+responsiveImageData(pRatio, pBreakpoints);
 ```
 
 #### Parameters
@@ -51,15 +51,15 @@ getResponsiveImageData(pRatio, pBreakpoints);
 
 ```tsx
 // will returned an array of IFakeImage object with 16/9 ratio
-const responsiveImageData = Fake.getResponsiveImageData(16 / 9);
+const responsiveImageData = Fake.responsiveImageData(16 / 9);
 ```
 
-### <a name="getVideoUrl"></a>getVideoUrl
+### <a name="videoUrl"></a>videoUrl
 
 Get a random video URL.
 
 ```tsx
-getVideoUrl(pFakeVideoType, pYoutubeId, pVimeoId);
+videoUrl(pFakeVideoType, pYoutubeId, pVimeoId);
 ```
 
 #### Parameters
@@ -76,15 +76,15 @@ getVideoUrl(pFakeVideoType, pYoutubeId, pVimeoId);
 
 ```tsx
 // will returned a random youtube url
-const youtubeUrl = Fake.getVideoUrl(EVideoType.YOUTUBE);
+const youtubeUrl = Fake.videoUrl(EVideoType.YOUTUBE);
 ```
 
-### <a name="getVideoId"></a>getVideoId
+### <a name="videoId"></a>videoId
 
 Get a random video ID.
 
 ```tsx
-getVideoId(pFakeVideoType);
+videoId(pFakeVideoType);
 ```
 
 #### Parameters
@@ -99,15 +99,15 @@ getVideoId(pFakeVideoType);
 
 ```tsx
 // will returned a random vimeo id
-const vimeoUrl = Fake.getVideoId(EVideoType.VIMEO);
+const vimeoUrl = Fake.videoId(EVideoType.VIMEO);
 ```
 
-### <a name="getTitle"></a>getTitle
+### <a name="title"></a>title
 
 Get a random title.
 
 ```tsx
-getTitle(pWords);
+title(pWords);
 ```
 
 #### Parameters
@@ -122,15 +122,15 @@ getTitle(pWords);
 
 ```tsx
 // will returned two random words
-const title = Fake.getTitle(2);
+const title = Fake.title(2);
 ```
 
-### <a name="getText"></a>getText
+### <a name="text"></a>text
 
 Get random text.
 
 ```tsx
-getText(pSentencies);
+text(pSentencies);
 ```
 
 #### Parameters
@@ -145,5 +145,5 @@ getText(pSentencies);
 
 ```tsx
 // will returned four random sentencies
-const text = Fake.getText(4);
+const text = Fake.text(4);
 ```
